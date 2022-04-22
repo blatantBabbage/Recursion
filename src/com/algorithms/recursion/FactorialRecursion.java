@@ -18,13 +18,17 @@ public class FactorialRecursion {
 
     public int factorial(int n) {
 
+        // Step3: Unintentional case- the constraint
         if (n<1 && n != 0) {
             return -1;
         }
 
+        // Step2: base case- stopping criterion
         if (n == 0 || n == 1){
             return 1;
         }
+
+        // Step1: recursive case
         return n*factorial(n-1);
     }
 }
