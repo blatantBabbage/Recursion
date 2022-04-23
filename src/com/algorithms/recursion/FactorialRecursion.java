@@ -13,7 +13,6 @@ public class FactorialRecursion {
          */
         var result = recursion.factorial(0);
         System.out.println(result);
-
     }
 
     public int factorial(int n) {
