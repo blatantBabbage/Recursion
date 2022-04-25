@@ -9,12 +9,18 @@ public class GCDRecursion {
     }
 
     public int gcd(int a, int b) {
+
+        // Step3: Unintentional case- the constraint
         if (a < 0 || b < 0) {
             return -1;
         }
+
+        // Step2: base case- stopping criterion
         if (b == 0) {
             return a;
         }
+
+        // Step1: recursive case
         return gcd(b, a%b);
     }
 }
